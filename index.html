@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"]
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div class="text-center">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/sum-of-two-numbers-img.png" class="w-[360px] h-[280px] mx-auto" />
+        <div class="bg-[#f5f7fa] pt-5 pb-5">
+            <span id="firstNumber" class="text-[#323f4b] bg-[#cbd2d9] font-[Roboto] text-[30px] font-bold border-8 border-[#e4e7eb] rounded-xl pl-2 pr-2 m-2"></span>
+            <span class="text-[#c4c4c4] font-[Roboto] text-[40px] m-1">+</span>
+            <span id="secondNumber" class="text-[#323f4b] bg-[#cbd2d9] font-[Roboto] text-[30px] font-bold border-8 border-[#e4e7eb] rounded-xl pl-2 pr-2 m-2"></span>
+            <span class="text-[#c4c4c4] font-[Roboto] text-[40px] m-1">=</span>
+            <input id="userInput" type="text" class="text-center text-[#323f4b] bg-[#cbd2d9] font-[Roboto] text-[30px] font-bold w-[142px] h-[60px] border-8 border-[#e4e7eb] rounded-xl mx-5" />
+            <div class="mt-4 mb-4">
+                <button id="checkButton" class="bg-blue-500 text-white font-[Roboto] p-3 rounded-md mr-3 hover:bg-blue-600" onclick="checkResult()">
+                    Check
+                </button>
+                <button id="restartButton" class="bg-blue-500 text-white font-[Roboto] p-3 rounded-md hover:bg-blue-600" onclick="restartGame()">
+                    Restart
+                </button>
+            </div>
+            <p id="gameResult" class="text-white bg-[#f5f7fa] font-[Roboto] text-[24px] font-medium"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
